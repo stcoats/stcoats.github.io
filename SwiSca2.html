@@ -445,6 +445,7 @@ $(document).ready(function () {
 <li>You will be prompted to input your access tokens. Follow the instructions</li>
 <li>enter <code>python twarc-archive.py --tweet_mode=&quot;extended&quot; &quot;helvete OR förbannat OR förbannade OR jävla&quot; tweetdata</code></li>
 <li>The script will download the relevant tweets to a file <code>tweets-0001.jsonl.gz</code> in the “tweetdata” directory</li>
+<li>Calls to Twitter's REST API are rate-limited, so if your query returns many results, the script will automatically wait in order to retrieve remaining hits</li>
 <li>You can automate this script to run at regular intervals (e.g. once a day, using crontab in Linux or Task Scheduler in Windows): duplicate tweets will be automatically excluded, and any new ones containing your words will be collected</li>
 <li>To collect to a specifc folder, specify the destination argument, e.g. <code>python twarc-archive.py --tweet_mode=&quot;extended&quot; &quot;vittu OR vitun OR vitusta&quot; /tweetdata/Finnish</code></li>
 <li>To get a specific language, try this: <code>twarc search 'bitch' --lang sv > bitch_sv.jsonl</code></li>
