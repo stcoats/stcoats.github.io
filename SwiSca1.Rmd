@@ -1,0 +1,149 @@
+---
+title: "SwiSca Twitter Workshop I"
+author: "Steven Coats, University of Oulu"
+date: "May 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Install Python
+
+- Go to https://www.python.org/. Download the latest version of Python (3.7.3) and launch the .exe
+
+- Check the "Add Python 3.7 to PATH" box and install
+
+- Now you should be able to run Python scripts from the command prompt
+
+### Install Python modules
+
+- Open a command prompt
+
+- enter `pip install tweepy twarc pandas folium branca`
+
+### Get a Twitter Account and developer credentials
+
+In order to access Twitter's APIs and automatically collect data, you will need a developer's account.
+
+<font size="1"> Note: Twitter frequently makes changes to the visual appearance of the login and registration pages. The required information fields are sometimes also modified. This walk-through is accurate as of early May, 2019. </font>
+
+### Create a Twitter account
+
+- Go to [Twitter](https://www.twitter.com) and click "Sign up"
+
+![](/home/cloud-user/Pictures/create_account.png){width=70%}
+
+### Verify your phone number
+
+![](/home/cloud-user/Pictures/create_account_verify_phone.png){width=70%}
+
+![](/home/cloud-user/Pictures/create_account_verify_phone2.png){width=70%}
+
+- Type the code you are sent into the input field
+
+### Enter a password
+
+![](/home/cloud-user/Pictures/create_account_password.png){width=70%}
+
+### Enter a profile picture (or skip)
+
+![](/home/cloud-user/Pictures/create_account_profile_pic.png){width=70%}
+
+### Enter a bio (or skip)
+
+![](/home/cloud-user/Pictures/create_account_bio.png){width=70%}
+
+### Enter some interests (or skip)
+
+![](/home/cloud-user/Pictures/create_account_interests.png){width=70%}
+
+### Additional registration information
+
+You will be asked to follow some accounts and offered the Twitter mobile app for download. Skip over these options for now.
+
+Now you have a basic Twitter account. The next step is to verify your account with an email address. 
+
+
+- Click on the person silhouette, then select "Settings and Privacy"
+
+![](/home/cloud-user/Pictures/settings_privacy.png){width=70%}
+
+You should now see your "Account" page.
+
+![](/home/cloud-user/Pictures/account.png){width=70%}
+
+
+Enter your email address into the field. Scroll down and click "Save changes". You will be prompted to provide your password, and a message will appear stating that a verification email has been sent to you. Open the verification email and confirm. 
+
+
+### Developer account
+
+- Now that you are confirmed, open a new window in your browser. Go to [https://developer.twitter.com](https://developer.twitter.com)
+
+- Click on "Apply" at the top right 
+
+![](/home/cloud-user/Pictures/dev_apply.png){width=70%}
+
+
+- On the next screen, click "Apply for a developer account"
+
+- On the following screen, click "Continue"
+
+![](/home/cloud-user/Pictures/create_account_reason.png){width=70%}
+
+- Select "Doing Academic research", then click "Next"
+
+- Now enter a name for the account and select a country. Click "Next"
+
+- On the next screen, fill in the form with a text. You can use the following as a template, but make a few changes so that your application won't be rejected for being a bot:
+
+  - I plan to access Twitter's APIs in order to conduct academic research in language, linguistics, and social sciences. I intend to analyze language use on Twitter by looking at relative frequencies and geographical locations for selected lexical items.<br/>
+<br/>
+
+- Click "yes" for "Are you planning to analyze Twitter data" and for "Do you plan to display Tweets or aggregate data about Twitter outside of Twitter" and fill in the fields, then click "Next"
+
+![](/home/cloud-user/Pictures/account_inyourwords.png){width=70%}
+
+- On the following screen, click "Looks good!", then accept the conditions and click "Submit Application"
+
+- You will get a verification email from Twitter Developer Accounts. Open it and confirm
+
+### Creating an app
+
+- Next you need to create an app to get the tokens you will use in the data collection script. Click on "Create an App"
+
+![](/home/cloud-user/Pictures/creat_app.png){width=70%}
+
+- On the next page, enter a name for your app (e.g. "Swearing App"), a description (e.g. "Swearing app"), and a website (e.g. "https://www.twitter.com"). You can skip over the next fields. Scroll down to "Tell us how this app will be used (required)". You can copy-paste the following, or enter your own text: 
+
+The app will be used to access Twitter's APIs in order to compile a corpus of swearing, profanity, taboo, and emotional language. The corpus will enable diachronic, typological, and sociological analyses of the use of profanity on Twitter. 
+
+- Now, click on "Create", then again after the pop-up. Now you have created the app!
+
+![](/home/cloud-user/Pictures/swearing_app.png){width=70%}
+
+- On this screen, select "Keys and tokens" near the top. You will see two long character strings: The first is the "API Key", the second the "API Secret key" (I have whited them out in the image below). 
+
+- Underneath "Access token & access token secret", click "Create". Open the file "my_twitter_tokens.py" from SwiSca_Workshop-master with a text editor. You will see this: 
+
+`consumer_key = ""`
+
+`consumer_secret = ""`
+
+`api_key = ""`
+
+`api_secret = ""`
+
+- Add the four tokens between the quotation marks. Save the file.
+
+![](/home/cloud-user/Pictures/keys_tokens.png){width=70%}
+
+With these four tokens you are ready to begin collecting data from the APIs!
+
+### Continue to [Part II](https://stcoats.github.io/SwiSca2.html)
+
+
+
+
