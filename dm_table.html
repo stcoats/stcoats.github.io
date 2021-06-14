@@ -2,13 +2,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
+	<script src="tablesorter-master/dist/js/jquery-ui.min.js"></script>
+	
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="dm_table_theme.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="testCss_dm_table.css" type="text/css" />
  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />   
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.widgets.js"></script>
+	<link id="ui-theme" class="ui-theme" rel="stylesheet" href="css/jquery-ui.min.css">
+	<link class="ui-theme" rel="stylesheet" href="tablesorter-master/dist/css/theme.jui.css">
+	<link class="theme default" rel="stylesheet" href="tablesorter-master/dist/css/theme.default.css">
+	<link class="theme blue" rel="stylesheet" href="tablesorter-master/dist/css/theme.blue.css">
+	<link class="theme green" rel="stylesheet" href="tablesorter-master/dist/css/theme.green.css">
+	<link class="theme grey" rel="stylesheet" href="tablesorter-master/dist/css/theme.grey.css">
+	<link class="theme ice" rel="stylesheet" href="tablesorter-master/dist/css/theme.ice.css">
+	<link class="theme black-ice" rel="stylesheet" href="tablesorter-master/dist/css/theme.black-ice.css">
+	<link class="theme dark" rel="stylesheet" href="tablesorter-master/dist/css/theme.dark.css">
+	<link class="theme dropbox" rel="stylesheet" href="tablesorter-master/dist/css/theme.dropbox.css">
+	<link class="theme metro-dark" rel="stylesheet" href="tablesorter-master/dist/css/theme.metro-dark.css">
+
+ 
+ <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="./tablesorter-master/dist/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="./tablesorter-master/dist/js/jquery.tablesorter.widgets.js"></script>
+<script type="text/javascript" src="./tablesorter-master/dist/js/widget/widget-scroller.min.js"></script>
     <script>
 $(function() {
 
@@ -61,8 +77,8 @@ $(function() {
   $( '#slider' ).slider({
     value : startFixedColumns,
     min   : 0,
-    max   : 4,
-    step  : 1,
+    max   : 2,
+    step  : .5,
     slide : function( event, ui ) {
       // page indicator
       $( '.fixed-columns' ).text( ui.value );
@@ -96,7 +112,8 @@ for the second slot, and <em>ab</em> for both slots).</p>
 
 <p>For more information, please see these <a href="http://cc.oulu.fi/~scoats/ISLE_6.slides.html#/">slides</a>.</p>
 
-<table id="myTable" border="1" class="tablesorter" >
+<div class="narrow-block" >
+<table id="myTable" border="1" class="tablesorter" style="verysmall">
   <thead>
     <tr>
       <th></th>
@@ -21012,6 +21029,7 @@ for the second slot, and <em>ab</em> for both slots).</p>
     </tr>
   </tbody>
 </table>
+</div>
 </div>
 </div>
 </body>

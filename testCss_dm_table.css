@@ -1,8 +1,304 @@
+.title-slide {
+  background-image: url(http://cc.oulu.fi/~scoats/oululogoRedTransparent.png);
+  background-repeat: no-repeat;
+  background-size: 57px 80px;
+  background-position:right top;
+  border-right: 12px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+a, a > code {
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 90%;
+}
+.remark-slide-contentSmallerMargin {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.remark-code-line-highlighted     { background-color: #ffff88; }
+
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+}
+.inverse body {
+    color: red;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-left30 {
+  float: left;
+  width: 30%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+} 
+.pull-right70 {
+  float: right;
+  width: 64%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+.center{
+    text-align: center;
+}
+.best_studio {
+  font-family: Sansita;
+font-style: italic;
+font-size: 90%
+}
+.ipa{
+    font-family: "Times New Roman", Times, serif;
+}
+.ita {
+    font-style: italic;}
+.small { font-size: 70% }
+.sup { font-size: 70%;
+position: relative;
+    top: -50px; } 
+.verysmall { font-size: 50% }
+.vsup { font-size: 50%;
+position: relative;
+    top: -50px; }
+.large { font-size: 140% }
+.remark-inline-code{
+  /* background: #F5F5F5; /* lighter */
+  background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 50%;
+}
+code.python{ /* Code block */
+    font-size: 14px;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+div.my-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    text-align: right;
+}
+
+div.my-footer {
+    background-color: #272822;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+
+div.my-footer span {
+    font-size: 10pt;
+    color: #F7F8FA;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}
+
+.remark-slide-number {
+  font-size: 10pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: #FFFFFF; /* white */
+  opacity: 1; /* default: 0.5 */
+}
+
+.supsub {
+    display: inline-block;
+}
+
+.supsub sup,
+.supsub sub {
+    position: relative;
+    display: block;
+    font-size: .5em;
+    font-style: italic;
+    line-height: 1.0;
+}
+
+.supsub sub {
+    top: .2em;
+}
+
+.title-slide {
+  background-image: url(https://i.dailymail.co.uk/i/pix/2012/07/31/article-2180947-144C31A7000005DC-200_634x618.jpg);
+  background-size: cover;
+}
+.title-slide h1, .title-slide h2, .title-slide h3 {
+  color: #ffeddd;
+}
+.title-slide a, a > body {
+  color: red;
+  line-height: 0.5em;  
+}
+      
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+.navbar .nav {
+  float: right; }
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
+
+  
+
+
+.roundedCorners {
+  border: #777 1px solid;
+  padding: 0 10px;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+.tablesorter .tablesorter-filter-row td:nth-child(8n+1) .tablesorter-filter {
+    width: 80px;
+}
+.tablesorter .tablesorter-filter-row td:nth-child(8n+2) .tablesorter-filter {
+    width: 40px;
+}
+table.tablesorter {
+    font-family:Open-Sans;
+    background-color: #CDCDCD;
+    margin:10px 0pt 15px;
+    font-size: 8pt;
+    width: 50%;
+    text-align: left;
+}
+
+/* Fixed column scroll bar spacer styling */
 .tablesorter-scroller-bar-spacer {
   background: #eee;
 }
-
-.tablesorter-scroller-fixed: after {
+/* add border to right side (LTR pages) of fixed column */
+.tablesorter-scroller-fixed:after {
   content: '';
   border-right: 1px solid #444;
   width: 1px;
@@ -10,19 +306,21 @@
   top: 0;
   bottom: 0;
   z-index: 2;
+  /* set to zero for non-jquery ui themes; use "left" here for RTL pages */
   right: 0;
+  /* match the margins set to the table to keep the border the same height as the table */
   margin: 10px 0 15px;
 }
 
 /* using-x-theme added by the demo code */
-.using-jui-theme .tablesorter-scroller-fixed: after {
+.using-jui-theme .tablesorter-scroller-fixed:after {
   /* use "left" here for RTL pages */
-  right: 0;
+  right: "left";
 }
-.using-green-theme .tablesorter-scroller-fixed: after,
-.using-black-ice-theme .tablesorter-scroller-fixed: after,
-.using-dark-theme .tablesorter-scroller-fixed: after,
-.using-dropbox-theme .tablesorter-scroller-fixed: after {
+.using-green-theme .tablesorter-scroller-fixed:after,
+.using-black-ice-theme .tablesorter-scroller-fixed:after,
+.using-dark-theme .tablesorter-scroller-fixed:after,
+.using-dropbox-theme .tablesorter-scroller-fixed:after {
   /* match the margins set to the table to keep the border the same height as the table */
   margin: 0;
 }
@@ -31,6 +329,6 @@
 #fixed-columns-table tbody td {
   /* force "Notes" column to not wrap, so we get a horizontal scrolling demo! */
   white-space: nowrap;
-
-  min-width: 60px;
+  /* Add min column width, or "Index" column filter gets too narrow to use */
+  min-width: 0px;
 }
