@@ -15,19 +15,6 @@ a, a > code {
   color: rgb(249, 38, 114);
   text-decoration: none;
 }
-.footnote {
-  position: absolute;
-  bottom: 3em;
-  padding-right: 4em;
-  font-size: 90%;
-}
-.remark-slide-contentSmallerMargin {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-.remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
   background-color: #272822;
@@ -119,51 +106,13 @@ blockquote {
   border-left: solid 5px lightgray;
   padding-left: 1em;
 }
-table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-}
+
 table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
+
 thead, tfoot, tr:nth-child(even) { background: #eee }
 
 @page { margin: 0; }
-@media print {
-  .remark-slide-scaler {
-    width: 100% !important;
-    height: 100% !important;
-    transform: scale(1) !important;
-    top: 0 !important;
-    left: 0 !important;
-  }
-}
 
-div.my-header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 80px;
-    width: 100%;
-    text-align: right;
-}
-
-div.my-footer {
-    background-color: #272822;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 20px;
-    width: 100%;
-}
-
-div.my-footer span {
-    font-size: 10pt;
-    color: #F7F8FA;
-    position: absolute;
-    left: 15px;
-    bottom: 2px;
-}
 
 .remark-slide-number {
   font-size: 10pt;
@@ -202,96 +151,17 @@ div.my-footer span {
   line-height: 0.5em;  
 }
       
-/* Custom container */
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px; }
 
-.container-narrow > hr {
-  margin: 30px 0; }
-
-.navbar .nav {
-  float: right; }
-
-/* posts index */
-.post > h3.title {
-  position: relative;
-  padding-top: 10px; }
-
-.post > h3.title span.date {
-  position: absolute;
-  right: 0;
-  font-size: 0.9em; }
-
-.post > .more {
-  margin: 10px 0;
-  text-align: left; }
-
-/* post-full*/
-.post-full .date {
-  margin-bottom: 20px;
-  font-weight: bold; }
-
-/* tag_box */
-.tag_box {
-  list-style: none;
-  margin: 0;
-  overflow: hidden; }
-
-.tag_box li {
-  line-height: 28px; }
-
-.tag_box li i {
-  opacity: 0.9; }
-
-.tag_box.inline li {
-  float: left; }
-
-.tag_box a {
-  padding: 3px 6px;
-  margin: 2px;
-  background: #eee;
-  color: #555;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px dashed #cccccc; }
-
-.tag_box a span {
-  vertical-align: super;
-  font-size: 0.8em; }
-
-.tag_box a:hover {
-  background-color: #e5e5e5; }
-
-.tag_box a.active {
-  background: #57A957;
-  border: 1px solid #4c964d;
-  color: #FFF; }
-
-  
-
-
-.roundedCorners {
-  border: #777 1px solid;
-  padding: 0 10px;
-  border-radius: 1em;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-}
-.tablesorter .tablesorter-filter-row td:nth-child(8n+1) .tablesorter-filter {
-    width: 80px;
-}
-.tablesorter .tablesorter-filter-row td:nth-child(8n+2) .tablesorter-filter {
-    width: 40px;
-}
 table.tablesorter {
     font-family:"Open Sans";
     background-color: #CDCDCD;
-    margin:10px 0pt 15px;
     font-size: 8pt;
-    width: 50%;
+    width: 100%;
     text-align: left;
 }
+
+
+
 
 /* Fixed column scroll bar spacer styling */
 .tablesorter-scroller-bar-spacer {
@@ -315,7 +185,7 @@ table.tablesorter {
 /* using-x-theme added by the demo code */
 .using-jui-theme .tablesorter-scroller-fixed:after {
   /* use "left" here for RTL pages */
-  right: "left";
+  right: 0;
 }
 .using-green-theme .tablesorter-scroller-fixed:after,
 .using-black-ice-theme .tablesorter-scroller-fixed:after,
@@ -333,4 +203,6 @@ table.tablesorter {
   min-width: 0px;
 }
 
-h1 { font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+h2 { font-family: "Open Sans"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20.4px; }
+h3 { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
